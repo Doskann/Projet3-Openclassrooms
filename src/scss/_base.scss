@@ -37,34 +37,39 @@ body, html
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-.footer__logo {
+
+
+.footer {
+    background-color: #353535;
+    color: #fff;
+ 
+  .footer__logo {
     color: #fff;
     font-family: Shrikhand,"cursive";
     font-size: 1.2rem;
     margin: 0 0 1rem;
-}
-.footer__list {
+  }
+ .footer__list {
     list-style: none;
     padding: 0;
     margin: 5px;
-}
-
-.footer__listElt {
-    margin: .5rem 0;
-}
-.footer__listElt:last-child {
-    margin-bottom: 0;
-}
-.footer {
-    background-color: #353535;
-    color: #fff;
   }
-  .footer .container
-  {
+
+ .footer__listElt {
+    margin: .5rem 0;
+ }
+ .footer__listElt:last-child {
+    margin-bottom: 0;
+   }
+
+ .container
+   {
       display: flex;
       flex-direction: column;
       padding: 1rem;
-  }.footer__icon
-  {
+   }
+   .footer__icon
+   {
       margin-right: 1rem;
   }
+}
