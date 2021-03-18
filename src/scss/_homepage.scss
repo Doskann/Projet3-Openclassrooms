@@ -1,5 +1,8 @@
 $colorwhite:#fff;
 $appPadding:1rem;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
 .search
 {
     display: flex;
@@ -96,7 +99,7 @@ $appPadding:1rem;
 {
   counter-increment: compteListe 1;
   content: counter(compteListe)"";
-  background: #9356dc;
+  background:$color-primary;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 100px;
@@ -151,7 +154,7 @@ $appPadding:1rem;
     object-fit: cover;
   }
  .card__badge {
-    background-color: #99e2d0;
+    background-color: $color-tertiary;
     color: #1b6150;
     padding: .5rem;
     border-radius: .125rem;

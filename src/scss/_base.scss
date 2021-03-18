@@ -1,3 +1,4 @@
+$colorwhite:#fff;
 .header
 {
     padding: 1rem;
@@ -32,17 +33,15 @@ body, html
         margin: auto;
         position: relative;
       }
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+
 
 
 .footer {
     background-color: #353535;
-    color: #fff;
+    color: $colorwhite;
  
   .footer__logo {
-    color: #fff;
+    color: $colorwhite;
     font-family: Shrikhand,"cursive";
     font-size: 1.2rem;
     margin: 0 0 1rem;
