@@ -1,8 +1,8 @@
 # ohmyfood
 Projet 3 du parcours "Développeur web" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass.
 # Objectifs
-* 1.Développer un site proposant le menu de 4 grands restaurants parisiens.
-* 2.Permettre la réservation en ligne et la composition de menus.
+  1.Développer un site proposant le menu de 4 grands restaurants parisiens.
+  2.Permettre la réservation en ligne et la composition de menus.
 # Livrables
 Pages à intégrer selon les maquettes
 * Page d’accueil
@@ -52,7 +52,7 @@ Pages à intégrer selon les maquettes
     Validation W3C HTML : à passer, warning autorisés
     Validation W3C CSS : à passer, warning autorisés
     Compatibilité : Dernières versions de Chrome, Firefox & Safari.
-    ##voici le lien [ brief complet ici][https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf]
+### voici le lien [brief complet ici](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf)
 # Contact
 Vous pouvez me contacter sur [le workplace d'Openclassrooms](https:/openclassrooms.workplace.com/), sur [linkedin](https://www.linkedin.com/feed/)
 
