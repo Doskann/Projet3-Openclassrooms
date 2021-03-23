@@ -57,6 +57,7 @@ align-items: center;
 justify-content: center;
 cursor: pointer;
 position: relative;
+background-color: #000;
 }
 
 .menu__like
@@ -71,7 +72,6 @@ justify-content: center;
 .menu__btn {
     height: 2rem;
     width: 2rem;
-    background-color: transparent;
     border: 0 solid transparent;
     padding: 0;
     display: flex;
@@ -80,13 +80,15 @@ justify-content: center;
     cursor: pointer;
     position: relative;
     background-color: #000;
+  
 }
-.menu__btn::before{
+.menu__btn::before, .menu__like{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+   
 }
 .menu__btn::before {
     opacity: 0;
@@ -132,16 +134,29 @@ bottom: 0;
 }
 .submenu__starters
 {
-background-color: #fff;
-padding: 1rem;
-display: flex;
-border-radius: .75rem;
-margin: 1rem 0;
-box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
-overflow: hidden;
-cursor: pointer;
-}
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: substarters .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
 
+    
+.submenu__starters:hover, .Validation__menu
+{
+    margin-right: -1rem;
+}
+.submenu__starters, .Validation__Icon
+{
+    transform: rotate(0);
+}
 .header__starters
 {
     flex:1;
@@ -165,7 +180,7 @@ cursor: pointer;
 }
 .starters__money
 {
-    font-weight: 700;
+font-weight: 700;
 display: flex;
 justify-content: flex-end;
 align-items: flex-end;
@@ -173,12 +188,45 @@ padding-left: .5rem;
 }
 
 }
+.Validation__menu
+{
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+}
+.Validation__Icon
+{
+height: 1.6rem;
+width: 1.6rem;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 100px;
+transform: rotate(180deg);
+transition-duration: .5s;
+}
+.validation__subicon
+{
+    color: #99e2d0;
+}
+@for $i from 0 to 9 {
+    .delay-#{$i} {
+      animation-delay:  #{$i/10}s;
+    }
+}
+}
 .order__menu
 {
 display: flex;
 text-decoration: none;
 justify-content: center;
 padding: 3rem 0;
+
 .order
 {
         border: 0;
@@ -190,14 +238,8 @@ padding: 3rem 0;
         background-color: #686868;
         background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
         cursor: pointer;
-        transition-duration: .25s;
+        transition:transform ease-in-out .25s;
         box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
-        
+               
 }
-
 }
-@for $i from 0 to 9 {
-    .delay-#{$i} {
-      animation-delay:  #{$i/10}s;
-    }
-  }

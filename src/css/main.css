@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@keyframes substarters {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 .header {
   padding: 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
@@ -239,7 +244,8 @@ a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  background-color: #000; }
 
 .menu__like {
   transition-duration: .25s;
@@ -251,7 +257,6 @@ a {
 .menu__btn {
   height: 2rem;
   width: 2rem;
-  background-color: transparent;
   border: 0 solid transparent;
   padding: 0;
   display: flex;
@@ -261,7 +266,7 @@ a {
   position: relative;
   background-color: #000; }
 
-.menu__btn::before {
+.menu__btn::before, .menu__like {
   position: absolute;
   top: 0;
   left: 0;
@@ -300,35 +305,82 @@ a {
     left: 0;
     bottom: 0; }
   .big__menus .submenu__starters {
-    background-color: #fff;
+    background-color: white;
     padding: 1rem;
     display: flex;
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     margin: 1rem 0;
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    cursor: pointer; }
-  .big__menus .header__starters {
-    flex: 1;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden; }
-  .big__menus .starters__title {
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden; }
-  .big__menus .starters__description {
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden; }
-  .big__menus .starters__money {
-    font-weight: 700;
+    cursor: pointer;
+    animation: substarters .6s;
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%; }
+    .big__menus .submenu__starters .submenu__starters:hover, .big__menus .submenu__starters .Validation__menu {
+      margin-right: -1rem; }
+    .big__menus .submenu__starters .submenu__starters, .big__menus .submenu__starters .Validation__Icon {
+      transform: rotate(0); }
+    .big__menus .submenu__starters .header__starters {
+      flex: 1;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .big__menus .submenu__starters .starters__title {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .big__menus .submenu__starters .starters__description {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .big__menus .submenu__starters .starters__money {
+      font-weight: 700;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-left: .5rem; }
+  .big__menus .Validation__menu {
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-left: .5rem; }
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s; }
+  .big__menus .Validation__Icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: .5s; }
+  .big__menus .validation__subicon {
+    color: #99e2d0; }
+  .big__menus .delay-0 {
+    animation-delay: 0s; }
+  .big__menus .delay-1 {
+    animation-delay: 0.1s; }
+  .big__menus .delay-2 {
+    animation-delay: 0.2s; }
+  .big__menus .delay-3 {
+    animation-delay: 0.3s; }
+  .big__menus .delay-4 {
+    animation-delay: 0.4s; }
+  .big__menus .delay-5 {
+    animation-delay: 0.5s; }
+  .big__menus .delay-6 {
+    animation-delay: 0.6s; }
+  .big__menus .delay-7 {
+    animation-delay: 0.7s; }
+  .big__menus .delay-8 {
+    animation-delay: 0.8s; }
 
 .order__menu {
   display: flex;
@@ -345,34 +397,7 @@ a {
     background-color: #686868;
     background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
     cursor: pointer;
-    transition-duration: .25s;
+    transition: transform ease-in-out .25s;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25); }
-
-.delay-0 {
-  animation-delay: 0s; }
-
-.delay-1 {
-  animation-delay: 0.1s; }
-
-.delay-2 {
-  animation-delay: 0.2s; }
-
-.delay-3 {
-  animation-delay: 0.3s; }
-
-.delay-4 {
-  animation-delay: 0.4s; }
-
-.delay-5 {
-  animation-delay: 0.5s; }
-
-.delay-6 {
-  animation-delay: 0.6s; }
-
-.delay-7 {
-  animation-delay: 0.7s; }
-
-.delay-8 {
-  animation-delay: 0.8s; }
 
 /*# sourceMappingURL=main.css.map */
