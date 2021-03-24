@@ -343,44 +343,28 @@ a {
       justify-content: flex-end;
       align-items: flex-end;
       padding-left: .5rem; }
-  .big__menus .Validation__menu {
-    background-color: #99e2d0;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: .5s; }
-  .big__menus .Validation__Icon {
-    height: 1.6rem;
-    width: 1.6rem;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    transform: rotate(180deg);
-    transition-duration: .5s; }
-  .big__menus .validation__subicon {
-    color: #99e2d0; }
-  .big__menus .delay-0 {
-    animation-delay: 0s; }
-  .big__menus .delay-1 {
-    animation-delay: 0.1s; }
-  .big__menus .delay-2 {
-    animation-delay: 0.2s; }
-  .big__menus .delay-3 {
-    animation-delay: 0.3s; }
-  .big__menus .delay-4 {
-    animation-delay: 0.4s; }
-  .big__menus .delay-5 {
-    animation-delay: 0.5s; }
-  .big__menus .delay-6 {
-    animation-delay: 0.6s; }
-  .big__menus .delay-7 {
-    animation-delay: 0.7s; }
-  .big__menus .delay-8 {
-    animation-delay: 0.8s; }
+
+.Validation__menu {
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: animeValid .5s ease-in-out; }
+
+.Validation__Icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg); }
+
+.validation__subicon {
+  color: #99e2d0; }
 
 .order__menu {
   display: flex;

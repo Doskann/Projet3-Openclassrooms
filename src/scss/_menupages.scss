@@ -186,7 +186,7 @@ justify-content: flex-end;
 align-items: flex-end;
 padding-left: .5rem;
 }
-
+}
 }
 .Validation__menu
 {
@@ -196,7 +196,7 @@ padding-left: .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: .5s;
+    animation:animeValid .5s ease-in-out;
 }
 .Validation__Icon
 {
@@ -208,18 +208,15 @@ align-items: center;
 justify-content: center;
 border-radius: 100px;
 transform: rotate(180deg);
-transition-duration: .5s;
+
+
 }
 .validation__subicon
 {
     color: #99e2d0;
 }
-@for $i from 0 to 9 {
-    .delay-#{$i} {
-      animation-delay:  #{$i/10}s;
-    }
-}
-}
+
+
 .order__menu
 {
 display: flex;
