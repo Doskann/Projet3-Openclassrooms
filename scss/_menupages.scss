@@ -1,0 +1,242 @@
+$colorwhite:#fff;
+$appwidth:2rem;
+.header_arrow
+{
+    position: absolute;
+    display: flex;
+    color:#000;
+    justify-content: center;
+    align-items: center;
+    height: $appwidth;
+    width: $appwidth;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+.card__img
+{
+max-width: 100%;
+max-height: 32rem;
+width: 100%;
+object-fit: cover;
+}
+.container
+{
+max-width: 1280px;
+margin: auto;
+}
+.menu
+{
+margin-top: -4rem;
+border-radius: 2rem 2rem 0 0;
+background-color: #f6f6f6;
+z-index: 1;
+position: relative;
+}
+.menu__header
+{
+padding: 1rem 2rem 0 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.menu__title
+{
+    font-family: "Shrikhand", "cursive";
+}
+.header__btn
+{
+height: 2rem;
+width: 2rem;
+background-color: transparent;
+border: 0 solid transparent;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+position: relative;
+background-color: #000;
+}
+
+.menu__like
+{
+transition-duration: .25s;
+background-color: #f6f6f6;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.menu__btn {
+    height: 2rem;
+    width: 2rem;
+    border: 0 solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: #000;
+  
+}
+.menu__btn::before, .menu__like{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   
+}
+.menu__btn::before {
+    opacity: 0;
+    transition: .5s;
+    content: "";
+    background: linear-gradient(0deg,#9356dc,#ff79da);
+}
+
+
+.big__menus
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* Media Query for Mobile Devices */ 
+    @media (max-width: 480px) { 
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+    } 
+
+
+.menu__starters
+{
+max-width: 100%;
+overflow: hidden;
+padding: 0 1rem;
+}
+.starters
+{
+text-transform: uppercase;
+position: relative;
+padding-bottom: .5rem;
+font-weight: 400;
+}
+.starters::after
+{
+content: "";
+width: 3rem;
+height: .25rem;
+background-color: #99e2d0;
+position: absolute;
+left: 0;
+bottom: 0;
+}
+.submenu__starters
+{
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: substarters .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+
+    
+.submenu__starters:hover, .Validation__menu
+{
+    margin-right: -1rem;
+}
+.submenu__starters, .Validation__Icon
+{
+    transform: rotate(0);
+}
+.header__starters
+{
+    flex:1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.starters__title
+{
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.starters__description
+{
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.starters__money
+{
+font-weight: 700;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+padding-left: .5rem;
+}
+}
+}
+.Validation__menu
+{
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation:animeValid .5s ease-in-out;
+}
+.Validation__Icon
+{
+height: 1.6rem;
+width: 1.6rem;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 100px;
+transform: rotate(180deg);
+
+
+}
+.validation__subicon
+{
+    color: #99e2d0;
+}
+
+
+.order__menu
+{
+display: flex;
+text-decoration: none;
+justify-content: center;
+padding: 3rem 0;
+
+.order
+{
+        border: 0;
+        padding: .75rem 1.5rem;
+        font-weight: 500;
+        font-size: 1.1rem;
+        border-radius: 100px;
+        color:$colorwhite;
+        background-color: #686868;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+        cursor: pointer;
+        transition:transform ease-in-out .25s;
+        box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);          
+               
+}
+}
