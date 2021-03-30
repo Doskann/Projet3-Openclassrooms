@@ -90,6 +90,7 @@ justify-content: center;
     width: 100%;
    
 }
+
 .menu__btn::before {
     opacity: 0;
     transition: .5s;
@@ -149,11 +150,11 @@ bottom: 0;
     max-width: 100%;
 
     
-.submenu__starters:hover, .Validation__menu
-{
+    .submenu__starters:hover, .validation__menu
+        {
     margin-right: -1rem;
-}
-.submenu__starters, .Validation__Icon
+    }
+.submenu__starters, .validation__icon
 {
     transform: rotate(0);
 }
@@ -188,7 +189,7 @@ padding-left: .5rem;
 }
 }
 }
-.Validation__menu
+.validation__menu
 {
     background-color: #99e2d0;
     margin: -1rem -5rem -1rem 1rem;
@@ -198,7 +199,7 @@ padding-left: .5rem;
     justify-content: center;
     animation:animeValid .5s ease-in-out;
 }
-.Validation__Icon
+.validation__icon
 {
 height: 1.6rem;
 width: 1.6rem;

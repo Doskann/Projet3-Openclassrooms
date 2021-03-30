@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Troisième projet du parcours \"Développeur web\" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass",  "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./src/scss/main.scss:./src/css/main.css"
+    "sass": "sass --watch ./scss/main.scss:./css/main.css"
   },
   "author": "KANN-SaÏdou",
   "license": "ISC"
